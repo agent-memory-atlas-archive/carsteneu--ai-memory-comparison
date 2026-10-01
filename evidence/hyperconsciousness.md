@@ -2,11 +2,11 @@
 
 Maintainer submission from Louis Beaumont, prepared with Codex assistance. Reviewed on 2026-10-01 against public commit `d619a4e59be9c33121389b9cf14e5a93b47b3eb4`. This audit covers the public engine and its documented integrations. Private Companion and private agent orchestration are excluded. A ❌ means the feature is not established under this template's definition in the checked public revision.
 
-**Repo:** `github.com/louis030195/hyperconsciousness`  
-**Stars:** 2 (2026-10-01 GitHub API snapshot)  
-**Language:** Rust  
-**License:** MIT ([LICENSE](https://github.com/louis030195/hyperconsciousness/blob/d619a4e59be9c33121389b9cf14e5a93b47b3eb4/LICENSE#L1))  
-**Created:** 2026-09-14  
+**Repo:** `github.com/louis030195/hyperconsciousness`
+**Stars:** 2 (2026-10-01 GitHub API snapshot)
+**Language:** Rust
+**License:** MIT ([LICENSE](https://github.com/louis030195/hyperconsciousness/blob/d619a4e59be9c33121389b9cf14e5a93b47b3eb4/LICENSE#L1))
+**Created:** 2026-09-14
 **Description:** Developer-alpha encrypted, append-only knowledge store with a Rust CLI, MCP/HTTP access, device sync and scoped expiring grants.
 
 ## System Metadata
@@ -235,4 +235,3 @@ A generic skill mentions Pi, but its referenced installation helper is absent in
 ### Methodology open ✅
 
 - Source: [docs/SCALABILITY-BENCHMARK.md#L73](https://github.com/louis030195/hyperconsciousness/blob/d619a4e59be9c33121389b9cf14e5a93b47b3eb4/docs/SCALABILITY-BENCHMARK.md#L73). Public synthetic storage/retrieval benchmark methodology states hardware, baseline, samples, limits and reproduction commands using examples/run_dimensions.py. This is not a LoCoMo, LongMemEval, PersonaMem or model-answer benchmark.
-
