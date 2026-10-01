@@ -1171,8 +1171,8 @@ const SYSTEMS = [
   },
   {
     id: "deja-vu", name: "deja-vu", url: "https://github.com/vshulcz/deja-vu", evidence: "https://github.com/carsteneu/ai-memory-comparison/blob/main/evidence/deja-vu.md",
-    description: "Retroactive local memory for 21 coding agents — indexes existing session transcripts, no capture step, no LLM calls, serves via MCP/hooks",
-    stars: 785, language: "Go", license: "MIT", singleBinary: true, created: "2026-07-01",
+    description: "Retroactive local memory for 34 coding agents — indexes existing session transcripts, no capture step, no LLM calls, serves via MCP/hooks",
+    stars: 1111, language: "Go", license: "MIT", singleBinary: true, created: "2026-07-01",
     deployment: "Local CLI, single binary", storage: "Custom append-only log + postings index", integration: "MCP + hooks + CLI + opencode plugin", proxy: false, webUi: true, offline: true, multiAgent: true, llmFlex: 0, cacheOpt: false, proceduralMemory: false, sandboxedExec: false, scheduledExec: false, privacy: true, export: true, setup: "curl | sh / brew / npm / go install", pricing: "free",
     unit: "Message record (verbatim transcript text, redacted)", entities: false, actions: false, keywords: true, anticipatedQueries: false, triggerRules: false, domainTag: false, taskType: false, context: false, source: true, originTrust: true, emotional: false, conflict: true, layeredMemory: true, timeTravel: true, schemaFields: 6,
     fulltext: true, semantic: true, hybrid: true, deep: false, codeGraph: false, docsSearch: false, factQuery: true, timeline: true, searchModes: 6, dataSources: 13,
@@ -1228,6 +1228,18 @@ const SYSTEMS = [
     autoExtract: true, contentPreproc: true, dedup: true, qualityRefine: true, narrative: true, clustering: true, recurrence: true, persona: false,
     p_claude: true, p_codex: true, p_opencode: false, p_gemini: true, p_copilot: false, p_cursor: true, p_windsurf: true, p_openclaw: true, p_hermes: false, p_pi: false, p_antigravity: false,
     b_locomo: "77.6", b_longmemeval: "72.5", b_personamem: "—", b_token: "96.6%", b_methodology: true,
+  },
+  {
+    id: "hyperconsciousness", name: "Hyperconsciousness", url: "https://github.com/louis030195/hyperconsciousness", evidence: "https://github.com/carsteneu/ai-memory-comparison/blob/main/evidence/hyperconsciousness.md",
+    description: "Developer-alpha encrypted, append-only knowledge store — Rust CLI, MCP/HTTP access, device sync, scoped expiring grants, zero LLM dependency",
+    stars: 2, language: "Rust", license: "MIT", singleBinary: true, created: "2026-09-14",
+    deployment: "Local CLI / self-hosted MCP or HTTP", storage: "Signed append-only logs, encrypted blobs, rebuildable encrypted indexes", integration: "CLI / MCP / HTTP / instruction skills", proxy: false, webUi: true, offline: true, multiAgent: true, llmFlex: 0, cacheOpt: true, proceduralMemory: false, sandboxedExec: false, scheduledExec: true, privacy: true, export: true, setup: "cargo build --release --locked", pricing: "free",
+    unit: "Signed encrypted record (JSON payload)", entities: false, actions: false, keywords: true, anticipatedQueries: false, triggerRules: false, domainTag: false, taskType: false, context: false, source: false, originTrust: false, emotional: false, conflict: false, layeredMemory: false, timeTravel: true, schemaFields: 6,
+    fulltext: true, semantic: false, hybrid: false, deep: false, codeGraph: false, docsSearch: false, factQuery: true, timeline: true, searchModes: 3, dataSources: 1,
+    decay: false, supersede: true, contradiction: false, quarantine: false, autoResolve: false, trustModel: false, explicitForget: true,
+    autoExtract: false, contentPreproc: false, dedup: true, qualityRefine: false, narrative: false, clustering: false, recurrence: false, persona: false,
+    p_claude: true, p_codex: true, p_opencode: false, p_gemini: false, p_copilot: false, p_cursor: false, p_windsurf: false, p_openclaw: false, p_hermes: false, p_pi: false, p_antigravity: false,
+    b_locomo: "—", b_longmemeval: "—", b_personamem: "—", b_token: "—", b_methodology: true,
   },
 ];
 
